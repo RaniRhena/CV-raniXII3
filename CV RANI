@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Rani Riyani - Cute Design</title>
+    <style>
+        /* Mengambil Font Lucu dari Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Pacifico&display=swap');
+
+        body {
+            background-color: #ffe4f2; /* Background Pink Sangat Muda */
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cv-card {
+            background: white;
+            width: 100%;
+            max-width: 750px;
+            border-radius: 40px;
+            box-shadow: 0 15px 35px rgba(255, 105, 180, 0.3);
+            overflow: hidden;
+            border: 8px solid #ffb6d9;
+            position: relative;
+        }
+
+        /* Dekorasi Lingkaran Lucu */
+        .cv-card::before {
+            content: "🌸";
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+        }
+
+        /* Bagian Profil/Header */
+        .header {
+            background-color: #ffb6d9;
+            padding: 40px 20px;
+            text-align: center;
+            color: #7a2d4d;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 6px solid white;
+            object-fit: cover;
+            background-color: #eee;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-family: 'Pacifico', cursive;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .header p {
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+
+        /* Layout Utama */
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            padding: 30px;
+            gap: 25px;
+        }
+
+        h3 {
+            color: #d63384;
+            background: #fff0f6;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            border-left: 5px solid #ff4d94;
+        }
+
+        /* Kolom Kiri */
+        .left-col {
+            background: #fff9fb;
+            padding: 20px;
+            border-radius: 25px;
+        }
+
+        .info-box {
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .info-box b {
+            color: #ff4d94;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        /* Kolom Kanan */
+        .right-col {
+            padding: 10px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        ul {
+            padding-left: 15px;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            list-style-type: '✨ ';
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #ff4d94;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            margin: 3px;
+        }
+
+        /* Responsive untuk HP */
+        @media (max-width: 600px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #fdf2f7;
+            font-size: 0.8rem;
+            color: #ff85b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-card">
+    <div class="header">
+        <img src="WhatsApp Image 2026-02-03 at 9.46.47 PM.jpeg" alt="Foto Rani" class="profile-img">
+        <h1>Rani Riyani</h1>
+        <p>Cheerful & Disciplined</p>
+    </div>
+
+    <div class="main-container">
+        <div class="left-col">
+            <h3>Tentang Saya</h3>
+            <p style="font-size: 0.9rem; line-height: 1.6;">
+                Saya pribadi ekstrovert yang ceria, mudah beradaptasi, dan sangat suka dunia seni suara & kuliner!
+            </p>
+
+            <h3>Kontak</h3>
+            <div class="info-box">
+                <b>📍 Alamat</b>
+                Kp Nusa RT 04 RW 14, Kel. Rancamanyar, Kec. Baleendah, Kab. Bandung
+            </div>
+            <div class="info-box">
+                <b>📞 WhatsApp</b>
+                0895620559222
+            </div>
+            <div class="info-box">
+                <b>📸 Instagram</b>
+                @ranryni810
+            </div>
+
+            <h3>Bahasa</h3>
+            <p>🇮🇩 Indonesia<br>🇸🇩 Sunda</p>
+        </div>
+
+        <div class="right-col">
+            <div class="section">
+                <h3>Pendidikan</h3>
+                <ul>
+                    <li><b>SDN Jatimekar</b> (Lulus 2020)</li>
+                    <li><b>SMPN 3 Baleendah</b> (Lulus 2023)</li>
+                    <li><b>SMA KP Baleendah</b> (Lulus 2026)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Keahlian</h3>
+                <div>
+                    <span class="skill-tag">Vokal/Menyanyi</span>
+                    <span class="skill-tag">Cooking</span>
+                    <span class="skill-tag">Tahfidz & Ngaji</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Pengalaman</h3>
+                <ul>
+                    <li>Pramuka (SD)</li>
+                    <li>Badminton (SMP & SMA)</li>
+                    <li>Rohis (SMA)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Sertifikat</h3>
+                <ul>
+                    <li>Lomba MTQ Madrasah</li>
+                    <li>Wisuda Tahfidz</li>
+                    <li>Pesantren Kilat (Sekolah & Madrasah)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Dibuat dengan ❤️ oleh Rani Riyani
+    </div>
+</div>
+
+</body>
+</html>
